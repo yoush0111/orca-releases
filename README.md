@@ -21,15 +21,10 @@
 
 ### macOS
 
-`.dmg`를 받아 설치한 뒤, 최초 1회 Gatekeeper 격리를 해제합니다.
+**현재 배포하지 않습니다.** 지금까지의 릴리즈는 모두 Windows 설치본뿐입니다.
 
-```bash
-xattr -dr com.apple.quarantine /Applications/Orca.app
-```
-
-> **macOS는 자동 업데이트가 동작하지 않습니다.** Apple Developer ID가 없어 ad-hoc 서명본이라,
-> Squirrel.Mac이 업데이트 파일의 코드서명을 실행 중인 앱과 대조하는 단계에서 매번 불일치로 판단합니다.
-> 릴리즈가 올라올 때마다 `.dmg`를 수동으로 설치해 주세요.
+electron-builder는 macOS 타깃을 크로스 빌드할 수 없어 별도의 Mac 빌드 머신이 필요합니다.
+필요해지면 같은 태그에 `.dmg`를 함께 올릴 예정입니다.
 
 ---
 
